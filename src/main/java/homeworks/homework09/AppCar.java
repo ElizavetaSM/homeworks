@@ -5,7 +5,7 @@ import homeworks.homework09.cars.PerformanceCar;
 import homeworks.homework09.races.Race;
 
 
-public class App {
+public class AppCar {
     public static void main (String [] args) {
     PerformanceCar performanceCar = new PerformanceCar("Chevrolet", "Impala", 1967, 431, 7, 2, 8, new String[2]);
     Car car1 = new Car("Chevrolet", "Camaro", 1998, 238, 5, 2, 8);
