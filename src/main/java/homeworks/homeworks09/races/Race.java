@@ -1,6 +1,6 @@
-package homeworks.homework09.races;
+package homeworks.homeworks09.races;
 
-import homeworks.homework09.cars.Car;
+import homeworks.homeworks09.cars.Car;
 
 import java.util.Arrays;
 import java.util.Objects;

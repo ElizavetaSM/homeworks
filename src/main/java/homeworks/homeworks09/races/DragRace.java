@@ -1,6 +1,6 @@
-package homeworks.homework09.races;
+package homeworks.homeworks09.races;
 
-import homeworks.homework09.cars.Car;
+import homeworks.homeworks09.cars.Car;
 
 public class DragRace extends Race {
     public DragRace(int routeLenght, String route, int prizeFund, Car[] carsGallery) {

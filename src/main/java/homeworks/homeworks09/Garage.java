@@ -1,7 +1,7 @@
-package homeworks.homework09;
+package homeworks.homeworks09;
 
-import homeworks.homework09.cars.Car;
-import homeworks.homework09.cars.PerformanceCar;
+import homeworks.homeworks09.cars.Car;
+import homeworks.homeworks09.cars.PerformanceCar;
 
 import java.util.Arrays;
 import java.util.Objects;
