@@ -1,16 +1,38 @@
 package homeworks.homeworks06;
 
+import java.util.List;
 import java.util.Objects;
 
-public class Product { //характеристики продукта
+public class Product {
     private String name;
     private int price;
 
-    public Product() { //конструктор
-        this.name = name;
+    public Product(String name, int price) { //конструктор
+        if (name == null || name.isEmpty()) {
+            throw new IllegalArgumentException("Имя не может быть пустым");
+        }
+        else this.name = name;
+        if (price<0) {
+            throw new IllegalArgumentException("Стоимость не может быть отрицательными числом");
+        }
         this.price = price;
     }
-// геттеры и сеттеры
+
+
+    public static Product findProduct(List<Product> products, String name) {
+        for (Product product : products) {
+            if (product == null){
+                continue;
+            }
+            String productName = product.getName();
+            if (productName != null && productName.equals(name)) {
+                return product;
+            }
+        }
+        return null; // Если не найден
+    }
+
+    // геттеры и сеттеры
     public String getName() {
         return name;
     }
@@ -19,7 +41,7 @@ public class Product { //характеристики продукта
         if (name.isEmpty()) {
             System.out.println("Название продукта не может быть пустой строкой");}
         else {
-        this.name = name;}
+            this.name = name;}
     }
 
     public int getPrice() {
@@ -32,7 +54,7 @@ public class Product { //характеристики продукта
         else {
             this.price = price;
         }
-        }
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -55,3 +77,4 @@ public class Product { //характеристики продукта
                 '}';
     }
 }
+
