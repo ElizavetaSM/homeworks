@@ -1,0 +1,4 @@
+Car(brand=Chevrolet, model=Impala, yearOfRelease=1967, horsePower=600, acceleration=3, suspension=2, durability=10)
+PerformanceCar(addOns=[Spoiler, Sunroof])
+PerformanceCar(addOns=[Spoiler, Sunroof])
+Car(brand=Chevrolet, model=Impala, yearOfRelease=1967, horsePower=600, acceleration=3, suspension=2, durability=10)
